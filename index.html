@@ -85,14 +85,14 @@
                 btnup.innerHTML = "move up"
                 btnup.style.position = "relative"
                 btnup.onclick = e => {
-                    dz.style.top = parseInt(dz.style.top) - 1 + "px"
+                    dz.style.backgroundPositionY = (isNaN(parseInt(dz.style.backgroundPositionY)) == true) ? 0+"px" : parseInt(dz.style.backgroundPositionY)-2+"px"
                 }
                 btnup.classList.add("no-print")
                 let btndown = document.createElement("button")
                 btndown.innerHTML = "move down"
                 btndown.style.position = "relative"
                 btndown.onclick = e => {
-                    dz.style.top = parseInt(dz.style.top) + 1 + "px"
+                    dz.style.backgroundPositionY = (isNaN(parseInt(dz.style.backgroundPositionY)) == true) ? 0+"px" : parseInt(dz.style.backgroundPositionY)+2+"px"
                 }
                 btndown.classList.add("no-print")
 
